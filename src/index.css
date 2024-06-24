@@ -64,6 +64,8 @@ code {
   color: inherit;
 }
 
+
+
 .content{
   text-align: center;
   display: flex;
@@ -82,4 +84,48 @@ code {
 
 .home p{
   font-family: Urbanist-Regular;
+}
+
+/*projects*/
+.projetos{
+  width: 100%;
+}
+
+.projetos-box{
+  display: flex;
+  height: 98%;
+}
+
+.lista-projetos ul{
+  list-style: none;
+  text-align: left;
+  
+}
+
+.lista-projetos ul a{
+  text-decoration: underline;
+  color: #888888;
+  font-size: 1.5em;
+}
+
+.nav-projeto-left{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.box-prev{
+  background: lightblue;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
+}
+
+.prev-projeto-right{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
