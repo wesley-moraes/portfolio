@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 
 const Projects = () =>{
+
+    const [age, setAge] = useState('');
+
+    const HoverEl = (props) =>{
+        setAge(props)
+    }
+
     return(
         <div className='projetos'>
             <div>
@@ -11,10 +19,10 @@ const Projects = () =>{
                     <div className='lista-projetos'>
                         <div>
                             <ul>
-                                <li>
+                                <li onMouseEnter={()=> HoverEl('val1')}>
                                     <a href="https://todolist-chi-fawn.vercel.app/" target='_blank' rel="noopener noreferrer">To Do List App </a>
                                 </li>
-                                <li>
+                                <li onMouseEnter={()=> HoverEl('val2')}> 
                                     <a href="https://my-costs-two.vercel.app/" target='_blank' rel="noopener noreferrer">My Costs App </a>
                                 </li>
                                 <li>
@@ -37,6 +45,7 @@ const Projects = () =>{
                     </div>
                 </div>
                 <div className='prev-projeto-right'>
+                    <p>{age}</p>
                     <div className='box-prev'>
 
                     </div>
