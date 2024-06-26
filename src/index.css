@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Urbanist-ExtraLight';
+  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Urbanist-Thin';
   src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-Thin.ttf) format('truetype');
 }
@@ -91,6 +96,10 @@ code {
   width: 100%;
 }
 
+.projetos h2{
+  font-family: Urbanist-Thin;
+}
+
 .projetos-box{
   display: flex;
   height: 98%;
@@ -103,9 +112,10 @@ code {
 }
 
 .lista-projetos ul a{
-  text-decoration: underline;
+  font-family: Urbanist-ExtraLight;
+  text-decoration: none;
   color: #888888;
-  font-size: 1.5em;
+  font-size: 2.2em;
 }
 
 .nav-projeto-left{
@@ -116,10 +126,22 @@ code {
 
 .box-prev{
   background: lightblue;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  border-top-left-radius: 70px;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
 
+.box-prev-empty{
+  width: 1000%;
+  height: 80%;
+  border: 1px solid lightblue;
+  border-top-left-radius: 70px ;
+}
+
+.box-prev img{
+  width: 100%;
+  height: 100%;
 }
 
 .prev-projeto-right{
@@ -128,4 +150,5 @@ code {
   height: 100%;
   align-items: center;
   justify-content: center;
+  
 }
