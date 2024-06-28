@@ -27,25 +27,25 @@ const Projects = () =>{
                         <div>
                             <ul>
                                 <li onMouseEnter={()=> HoverEl(toDoListImg)}>
-                                    <a href="https://todolist-chi-fawn.vercel.app/" target='_blank' rel="noopener noreferrer">To Do List App </a>
+                                    <a className='raise' href="https://todolist-chi-fawn.vercel.app/" target='_blank' rel="noopener noreferrer">To Do List App </a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(myCostsImg)}> 
-                                    <a href="https://my-costs-two.vercel.app/" target='_blank' rel="noopener noreferrer">My Costs App </a>
+                                    <a className='raise' href="https://my-costs-two.vercel.app/" target='_blank' rel="noopener noreferrer">My Costs App </a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(flashImg)}>
-                                    <a href="https://wesley-moraes.github.io/landingPage-Flash/" target='_blank' rel="noopener noreferrer">Landing Page Flash</a>
+                                    <a className='raise' href="https://wesley-moraes.github.io/landingPage-Flash/" target='_blank' rel="noopener noreferrer">Landing Page Flash</a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(dungeonsCharImg)} > 
-                                    <a href="https://wesley-moraes.github.io/DungeonChars/" target='_blank' rel="noopener noreferrer">Dungeon's Chars</a>
+                                    <a className='raise' href="https://wesley-moraes.github.io/DungeonChars/" target='_blank' rel="noopener noreferrer">Dungeon's Chars</a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(quisReactImg)} >
-                                    <a href="https://quiz-react-three-dun.vercel.app/" target='_blank' rel="noopener noreferrer">Quiz React</a>
+                                    <a className='raise' href="https://quiz-react-three-dun.vercel.app/" target='_blank' rel="noopener noreferrer">Quiz React</a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(re2Img)} >
-                                    <a href="https://resident-evil-2-landingpage.vercel.app/" target='_blank' rel="noopener noreferrer">Resident Evil 2</a>
+                                    <a className='raise' href="https://resident-evil-2-landingpage.vercel.app/" target='_blank' rel="noopener noreferrer">Resident Evil 2</a>
                                 </li>
                                 <li onMouseEnter={()=> HoverEl(nextTesthImg)} >
-                                    <a href="https://next-test-rn8i.vercel.app/" target='_blank' rel="noopener noreferrer">Next Test</a>
+                                    <a className='raise' href="https://next-test-rn8i.vercel.app/" target='_blank' rel="noopener noreferrer">Next Test</a>
                                 </li>                    
                             </ul>
                         </div>

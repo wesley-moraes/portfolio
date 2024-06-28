@@ -1,3 +1,8 @@
+:root {
+  --underline-thickness: 3px;
+}
+
+
 *{
   box-sizing: border-box;
 }
@@ -44,10 +49,11 @@ code {
 
 .subtitle{
   font-family: Urbanist-Thin;
+  color: #262626;
 }
 
 .main-container{
-  background-color: #f7f7f7;
+  background-color: #d4d4d8;
   display: flex;
   width: 100%;
   height: 99vh;
@@ -62,18 +68,6 @@ code {
   height: 80vh;
 }
 
-.nav-header{
-  text-align: center;
-  font-family: Urbanist-Light;
-}
-
-.nav-header a{
-  margin: 10px 10px;
-  text-decoration: none;
-  color: inherit;
-}
-
-
 
 .content{
   text-align: center;
@@ -82,14 +76,68 @@ code {
   justify-content: center; 
 }
 
+/*Nav Menu*/
+.nav-header {
+  font-family: Urbanist-Light;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  
+}
+
+.nav-header a {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #57534e;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+  padding: 0 1.5em 0.25em;
+}
+
+.nav-header a::before {
+  content: "";
+  scale: 0 1;
+  position: absolute;
+  background: #44403c; 
+  transition: 0.3s, translate 0s 0.3s;
+  inset: calc(100% - var(--underline-thickness)) 0 0 0;
+}
+
+.nav-header a:hover {
+  color: #7e22ce;
+}
+
+.nav-header a:hover::before {
+  translate: 0;
+  transition: 0.3s;
+}
+
+.nav-header:hover a::before {
+  scale: 1;
+}
+
+.nav-header:hover a:hover ~ a::before {
+  translate: -100% 0;
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+.nav-header:hover a:has(~ a:hover)::before {
+  translate: 100% 0;
+  transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+/*home*/
 .home{
   align-self: center;
 }
 
-/*home*/
-
 .home p{
   font-family: Urbanist-Regular;
+  color: #3f3f46;
+  font-size: 1.1em;
 }
 
 /*projects*/
@@ -111,8 +159,35 @@ code {
 .lista-projetos ul a{
   font-family: Urbanist-ExtraLight;
   text-decoration: none;
-  color: #888888;
+  color: #44403c;
   font-size: 2.2em;
+  display: block;
+  position: relative;
+}
+
+.lista-projetos ul a:hover{
+  color: #7e22ce;
+}
+
+.lista-projetos ul a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #44403c;
+  border-radius: 0.1em;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.raise:after {
+  bottom: -0.2em;
+}
+.raise:hover:after {
+  opacity: 1;
+  transform: translate3d(0, -0.2em, 0);
+  z-index: 2;
 }
 
 .nav-projeto-left{
@@ -146,9 +221,10 @@ code {
   width: 50%;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; 
 }
+
+
 
 /*about*/
 .container-about{
@@ -193,10 +269,14 @@ code {
   font-size: 1.1em;
 }
 
+.social-links{
+  margin-bottom: 10px;
+}
+
 .social-links a{
   display: block;
   text-decoration: none;
-  color: #888888;
+  color: #363636;
   font-size: 1.3em;
   font-family: Urbanist-Light;
 }
