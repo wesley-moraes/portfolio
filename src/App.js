@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home'
 import Projects from './components/Projects'
 import About from './components/About'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -17,12 +18,16 @@ function App() {
               <Link to="/">
                 Home
               </Link>
-              <Link to="/about">
-                Sobre
-              </Link>
               <Link to="/projects">
                 Projetos
               </Link>
+              <Link to="/contact">
+                Contato
+              </Link>
+              <Link to="/about">
+                Sobre
+              </Link>
+              
             </div>
             <div className='content'>
               <Routes>
@@ -30,6 +35,7 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="about" element={<About />} />
                   <Route path="projects" element={<Projects />} />
+                  <Route path="contact" element={<Contact />} />
                 
               </Routes>
             </div>

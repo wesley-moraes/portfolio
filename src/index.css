@@ -2,36 +2,31 @@
   --underline-thickness: 3px;
 }
 
-
 *{
   box-sizing: border-box;
 }
 
 /*Fonts*/
 @font-face {
-  font-family: 'Urbanist-Light';
-  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-Light.ttf) format('truetype');
+  font-family: 'CSKalimer-Regular';
+  src: local('Urbanist'), url(./fonts/Cs_Kalimer/CSKalimer-Regular-BF667a7d8b2300b.otf), format('OpenType');
 }
 
 @font-face {
-  font-family: 'Urbanist-ExtraLight';
-  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-ExtraLight.ttf) format('truetype');
+  font-family: 'SpaceMono-Bold';
+  src: local('Urbanist'), url(./fonts/Space_Mono/SpaceMono-Bold.ttf), format('TrueType');
 }
 
 @font-face {
-  font-family: 'Urbanist-Thin';
-  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-Thin.ttf) format('truetype');
+  font-family: 'Rubik-Regular';
+  src: local('Urbanist'), url(./fonts/Rubik/static/Rubik-Regular.ttf), format('TrueType');
 }
 
 @font-face {
-  font-family: 'Urbanist-Regular';
-  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-Regular.ttf) format('truetype');
+  font-family: 'Rubik-Light';
+  src: local('Urbanist'), url(./fonts/Rubik/static/Rubik-Light.ttf), format('TrueType');
 }
 
-@font-face {
-  font-family: 'Urbanist-Bold';
-  src: local('Urbanist'), url(./fonts/Urbanist/static/Urbanist-Bold.ttf) format('truetype');
-}
 
 body {
   margin: 0;
@@ -48,15 +43,15 @@ code {
 }
 
 .subtitle{
-  font-family: Urbanist-Thin;
-  color: #262626;
+  font-family: CSKalimer-Regular;
+  color: #ffffff;
 }
 
 .main-container{
-  background-color: #d4d4d8;
+  background-color: #000;
   display: flex;
   width: 100%;
-  height: 99vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -68,28 +63,30 @@ code {
   height: 80vh;
 }
 
-
 .content{
-  text-align: center;
   display: flex;
   height: 99%;
-  justify-content: center; 
 }
 
 /*Nav Menu*/
 .nav-header {
-  font-family: Urbanist-Light;
+  font-family: SpaceMono-Bold;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   display: flex;
-  align-self: center;
-  
+  border-bottom: 3px solid #fff;
+  padding-bottom: 50px;
+}
+
+.nav-header a:nth-child(1){
+  padding-left: 0px;
 }
 
 .nav-header a {
   cursor: pointer;
   font-size: 1.2em;
-  color: #57534e;
+  color: #fff;
   overflow: hidden;
   transition: 0.3s;
   position: relative;
@@ -132,17 +129,29 @@ code {
 /*home*/
 .home{
   align-self: center;
+  text-align: left;
 }
 
 .home p{
-  font-family: Urbanist-Regular;
-  color: #3f3f46;
+  font-family: Rubik-Regular;
+  color: #ffffff;
   font-size: 1.1em;
+}
+
+.home h1{
+  font-size: 7em;
+  margin: 0px;
 }
 
 /*projects*/
 .projetos{
   width: 100%;
+}
+
+.projetos h2{
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .projetos-box{
@@ -157,7 +166,6 @@ code {
 }
 
 .lista-projetos ul a{
-  font-family: Urbanist-ExtraLight;
   text-decoration: none;
   color: #44403c;
   font-size: 2.2em;
@@ -198,7 +206,6 @@ code {
 
 .box-prev{
   background: lightblue;
-  border-top-left-radius: 70px;
   width: 100%;
   height: 80%;
   overflow: hidden;
@@ -223,8 +230,6 @@ code {
   align-items: center;
   justify-content: center; 
 }
-
-
 
 /*about*/
 .container-about{
@@ -253,10 +258,11 @@ code {
   top: -120px;
   width: 100%;
   height: 130%;
-  
 }
 
 .content-socialMedia{
+  font-family: Rubik-Light;
+  color: #fff;
   width: 40%;
   text-align: left;
   display: flex;
@@ -265,7 +271,6 @@ code {
 }
 
 .content-socialMedia p{
-  font-family: Urbanist-ExtraLight;
   font-size: 1.1em;
 }
 
@@ -276,9 +281,8 @@ code {
 .social-links a{
   display: block;
   text-decoration: none;
-  color: #363636;
+  color: #fff;
   font-size: 1.3em;
-  font-family: Urbanist-Light;
 }
 
 .social-links a svg{

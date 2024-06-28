@@ -1,36 +1,32 @@
-Urbanist Variable Font
-======================
+Rubik Variable Font
+===================
 
-This download contains Urbanist as both variable fonts and static fonts.
+This download contains Rubik as both variable fonts and static fonts.
 
-Urbanist is a variable font with this axis:
+Rubik is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Urbanist-VariableFont_wght.ttf
-  Urbanist-Italic-VariableFont_wght.ttf
+  Rubik-VariableFont_wght.ttf
+  Rubik-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Urbanist:
-  static/Urbanist-Thin.ttf
-  static/Urbanist-ExtraLight.ttf
-  static/Urbanist-Light.ttf
-  static/Urbanist-Regular.ttf
-  static/Urbanist-Medium.ttf
-  static/Urbanist-SemiBold.ttf
-  static/Urbanist-Bold.ttf
-  static/Urbanist-ExtraBold.ttf
-  static/Urbanist-Black.ttf
-  static/Urbanist-ThinItalic.ttf
-  static/Urbanist-ExtraLightItalic.ttf
-  static/Urbanist-LightItalic.ttf
-  static/Urbanist-Italic.ttf
-  static/Urbanist-MediumItalic.ttf
-  static/Urbanist-SemiBoldItalic.ttf
-  static/Urbanist-BoldItalic.ttf
-  static/Urbanist-ExtraBoldItalic.ttf
-  static/Urbanist-BlackItalic.ttf
+in those cases you can use the static font files for Rubik:
+  static/Rubik-Light.ttf
+  static/Rubik-Regular.ttf
+  static/Rubik-Medium.ttf
+  static/Rubik-SemiBold.ttf
+  static/Rubik-Bold.ttf
+  static/Rubik-ExtraBold.ttf
+  static/Rubik-Black.ttf
+  static/Rubik-LightItalic.ttf
+  static/Rubik-Italic.ttf
+  static/Rubik-MediumItalic.ttf
+  static/Rubik-SemiBoldItalic.ttf
+  static/Rubik-BoldItalic.ttf
+  static/Rubik-ExtraBoldItalic.ttf
+  static/Rubik-BlackItalic.ttf
 
 Get started
 -----------
