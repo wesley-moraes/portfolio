@@ -1,34 +1,40 @@
 import React from 'react';
-import { FaGithub } from "react-icons/fa";
-import { IoLogoDiscord } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa6";
+import { FaSass } from "react-icons/fa";
 
-
-import photoMe from '../img/me.jpg';
+import photoMe from '../img/me3.jpg';
 
 const About = () =>{
     return (
         <div className='container-about'>
             <h2 className='subtitle' >Um pouco sobre mim</h2>
             
-            <div className='container-photo-socialMedia'>
+            <div className='container-photo'>
                 <div className='content-photo'>
                     <img src={photoMe} alt="Wesley Moraes" />
                 </div>
                 
-                <div className='content-socialMedia'>
+                <div className='content-about'>
                     <div>
-                        <p>Desenvolvedor front-end! Interessado tanto pelo UI quanto apaixonado por desenvolver aplicações web!
+                        <p>Desenvolvedor front-end! Interessado tanto pelo UI quanto apaixonado por desenvolver aplicações web! <br /><br />
                             Tenho experiência em JavaScript, React, HTML, CSS e sempre busco aprender e implementar novas tecnologias.
-                            Acredito que um bom design aliado à funcionalidade é a chave para criar experiências de usuário incríveis.
+                            Acredito que um bom design aliado à funcionalidade é a chave para criar experiências de usuário incríveis. <br /><br />
                             Agora focando em React.js para alcançar novas experiências. 
                         </p>
-                        <div className="social-links">
-                            <a href="https://www.linkedin.com/in/wesley-moraes" target="_blank" rel="noopener noreferrer"><FaLinkedin />
-                            LinkedIn</a>
-                            <a href="https://github.com/wesley-moraes" target="_blank" rel="noopener noreferrer"><FaGithub />GitHub </a>
-                            <a href="https://discordapp.com/users/292421100854444034" target="_blank" rel="noopener noreferrer"><IoLogoDiscord />Discord</a>
+                        <div className='skills-icons'>
+                            <div className='html'><FaHtml5 /></div>
+                            <div className='css'><IoLogoCss3 /></div>
+                            <div className='js'><TbBrandJavascript /></div>
+                            <div className='react'><FaReact /></div>
+                            <div className='sass'><FaSass /></div>
+                            <div className='db'><FaDatabase /></div>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>

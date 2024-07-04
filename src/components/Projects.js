@@ -17,9 +17,9 @@ const Projects = () =>{
     }
 
     return(
-        <div className='projetos'>
+        <div className='container-projetos'>
             <div>
-                <h2 className='subtitle'>Navegue nos meus projetos e me mande uma mensagem!</h2>
+                <h2 className='subtitle'>Navegue nos meus projetos!</h2>
             </div>
             <div className='projetos-box'>
                 <div className='nav-projeto-left'>

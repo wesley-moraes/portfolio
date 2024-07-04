@@ -1,9 +1,24 @@
 import React from 'react';
+import { FaGithub } from "react-icons/fa";
+import { IoLogoDiscord } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Contact = () =>{
+
+    console.log("Entrou aqui");
     return(
-        <div>
-            <p>Contact Page... </p>
+        <div className='container-contact'>
+            <div>
+                <h2 className='subtitle'>Me mande uma mensagem!</h2>
+            </div>
+            <div className='social-box'>
+                <div className="social-links">
+                    <a href="https://www.linkedin.com/in/wesley-moraes" target="_blank" rel="noopener noreferrer"><FaLinkedin />LinkedIn</a>
+                    <a href="https://github.com/wesley-moraes" target="_blank" rel="noopener noreferrer"><FaGithub />GitHub </a>
+                    <a href="https://discordapp.com/users/292421100854444034" target="_blank" rel="noopener noreferrer"><IoLogoDiscord />Discord</a>
+                </div>
+            </div>
         </div>
     )
 };
