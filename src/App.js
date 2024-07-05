@@ -27,8 +27,9 @@ function App() {
               <Link to="/about">
                 Sobre
               </Link>
-              
+                
             </div>
+            <div className='lineWhite'></div>
             <div className='content'>
               <Routes>
                 
