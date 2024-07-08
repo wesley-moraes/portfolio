@@ -151,9 +151,39 @@ code {
   font-size: 1.1em;
 }
 
+/*Css animado*/
+
+/* Definições de cores */
+:root {
+  --gradient-color-1: #e9e9e9;
+  --gradient-color-2: #686868;
+}
+
+
+/* Keyframes */
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 0 1600px;
+  }
+  100% {
+    background-position: 1600px 0;
+  }
+}
+
 .home h1{
   font-size: 7em;
   margin: 0px;
+
+  /*css animado*/
+  background: -webkit-linear-gradient(left, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-1));
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 4.5s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
 }
 
 /*projects*/
@@ -442,3 +472,4 @@ code {
 .container-contact{
   color: #fff;
 }
+
