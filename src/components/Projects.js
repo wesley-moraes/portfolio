@@ -6,7 +6,7 @@ import nextTesthImg from '../img/next-test-prev.jpg'
 import quisReactImg from '../img/quiz-react-prev.jpg'
 import re2Img from '../img/re2-prev.jpg'
 import toDoListImg from '../img/tod-do-list-prev.jpg'
-import agendaImg from '../img/agenda-prev.jpg'
+import agendaImg from '../img/agenda-prev.png'
 
 
 const Projects = () =>{
