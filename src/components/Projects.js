@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import dungeonsCharImg from '../img/dungeons-char-prev.jpg'
+import dungeonsCharImg from '../img/dungeons-char-prev.png'
 import flashImg from '../img/flash-prev.png'
 import myCostsImg from '../img/my-costs-prev.png'
 import nextTesthImg from '../img/next-test-prev.jpg'
-import quisReactImg from '../img/quiz-react-prev.jpg'
-import re2Img from '../img/re2-prev.jpg'
+import quisReactImg from '../img/quiz-react-prev.png'
+import re2Img from '../img/re2-prev.png'
 import toDoListImg from '../img/to-do-list-prev.png'
 import agendaImg from '../img/agenda-prev.png'
 
